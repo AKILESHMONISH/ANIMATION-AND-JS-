@@ -1,0 +1,96 @@
+body{
+    display:flex;
+    text-align: center ;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 90px;
+    background-color: rgb(220, 251, 225);
+}
+
+.bcard{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+}
+.bcard:hover{
+    transform: perspective(3000px) rotate(10deg);
+    box-shadow: inset 200px 50px 200px rgba(232, 15, 15, 0.3),30px 0 50px rgba(183, 41, 41, 0.3);
+}
+
+.bcard:hover .f{
+    transform:rotate(-180deg);
+}
+.bcard:hover.s{
+    visibility: hidden;
+}
+
+.f{
+    position: relative;
+    background-color: antiquewhite;
+    width:300px;
+    height: 400px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 200px 50px 200px rgba(232, 15, 15, 0.3),30px 0 50px rgba(183, 41, 41, 0.3);
+    transition: 0.3s;
+}
+.s{
+    text-align: center;
+    margin: 40px;
+    transition:0.3;
+}
+.bb{
+    position: absolute;
+}
+.b1,.b2,.b3,.b4{
+    position: absolute;
+    width: 85px;
+    height: 95px;
+    border-radius: 50%;
+}
+.b1{
+    background-color: rgb(45, 96, 5);
+    left: 4px;
+    top: 20px;
+}
+.b2{
+     background-color: aqua;
+     left: 68px;
+     top: 10px;
+}
+.b3{
+    background-color: rgb(68, 230, 87);
+     left: 158px;
+     top: 5px;
+}
+.b4{
+    background-color: rgb(251, 30, 247);
+     left: 208px;
+     top: 0px;
+}
+.b1:before, .b2:before, .b3:before, .b4:before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 155px;
+    background-color: antiquewhite;
+    top:95px;
+}
+.b1:after, .b2:after, .b3:after, .b4:after{
+    content:"";
+    position: absolute;
+    border-radius: 7px solid transparent;
+    border-left: 7px solid transparent;
+    top:94px
+}
+.I{
+    position: absolute;
+    top:50px;
+    left:10px;
+    box-shadow:inset 100px 20px 100px rgb(0,0,0,0.3);
+    z-index:-1;
+}
