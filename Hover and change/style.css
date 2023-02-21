@@ -1,0 +1,34 @@
+body{
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+    display: grid;
+}
+
+.a1{
+    background-color: rgb(68, 196, 26);
+    border: 2px solid rgb(245, 239, 239);
+    border-radius: 80%;
+    height: 400px;
+    width: 350px;
+    place-items: center;
+    display: grid;
+
+}
+h2{
+font-family: 'Times New Roman', Times, serif;
+}
+#idea{
+    height: 60px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+#id1{
+    outline: none;
+    border: 2px solid #fcf7f7;
+    border-radius: 50px;
+    height: 40px;
+    width: 120px;
+    padding: 0 10px;
+}
